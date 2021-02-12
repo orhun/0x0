@@ -37,7 +37,7 @@ app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///db.sqlite" # "postgresql://0x0@/0x0"
 app.config["PREFERRED_URL_SCHEME"] = "https" # nginx users: make sure to have 'uwsgi_param UWSGI_SCHEME $scheme;' in your config
-app.config["MAX_CONTENT_LENGTH"] = 256 * 1024 * 1024
+app.config["MAX_CONTENT_LENGTH"] = 40 * 1024 * 1024
 app.config["MAX_URL_LENGTH"] = 4096
 app.config["FHOST_STORAGE_PATH"] = "up"
 app.config["FHOST_USE_X_ACCEL_REDIRECT"] = True # expect nginx by default
@@ -409,8 +409,8 @@ retention = min_age + (-max_age + min_age) * pow((file_size / max_size - 1), 3)
 ABUSE
 -----
 
-If you would like to request permanent deletion, please contact lachs0r via
-IRC on Freenode, or send an email to lachs0r@(this domain).
+If you would like to request permanent deletion, please contact orhun via
+IRC on Freenode, or send an email to orhunparmaksiz@gmail.com.
 
 Please allow up to 24 hours for a response.
 </pre>
