@@ -361,8 +361,8 @@ def fhost():
             maxsizehalf = int(maxsizehalf)
 
         return """<pre>
-THE NULL POINTER
-================
+HJKL!
+=====
 
 HTTP POST files here:
     curl -F'file=@yourfile.png' {0}
